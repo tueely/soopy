@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tueely.com/images/favicon.png">
+    <meta charset="UTF-8">
+    <title>Soopy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Heads-Up Display -->
+    <div id="hud">Soopy Score: 0.00 seconds</div>
+    <div id="highscore">Highscore: 0.00 seconds</div>
+
+    <!-- Home Screen Overlay -->
+    <div id="home-screen">
+        <h1>Welcome to Soopy</h1>
+        <p>Use your mouse to look around.<br>Avoid the balls as long as you can!</p>
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <!-- Pause Screen Overlay -->
+    <div id="pause-screen" style="display: none;">
+        <h1>Game Paused</h1>
+        <button id="resume-button">Resume Game</button>
+    </div>
+
+    <!-- Game Over Screen Overlay -->
+    <div id="game-over" style="display: none;">
+        <h1>Game Over!</h1>
+        <p>You survived for: <span id="final-score">0.00</span> seconds</p>
+        <button id="restart-button">Restart Game</button>
+    </div>
+
+    <!-- Include Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Include all JS files -->
+    <script src="pointerLockControls.js"></script>
+    <script src="ui.js"></script>
+    <script src="controls.js"></script>
+    <script src="obstacles.js"></script>
+    <script src="homeObstacles.js"></script>
+    <script src="difficulty.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
